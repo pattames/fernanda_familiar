@@ -10,4 +10,34 @@
     background-image: url("/banner.jpeg");
     background-size: cover;
   }
+  .bg-fit {
+    background-position: 50% 20%;
+  }
+  .fade-in {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  .bottom-in {
+    animation: bottomInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes bottomInAnimation {
+  0% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }

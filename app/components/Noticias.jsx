@@ -1,7 +1,14 @@
-export default function Noticias() {
+import Tarjeta from "./Tarjeta";
+
+export default async function Noticias() {
+  const res = await fetch("https://fernandafamiliar.soy/wp-json/wp/v2/posts");
+  const posts = await res.json();
+
   return (
-    <div>
-      <h1>Noticias</h1>
+    <div className="p-4 flex flex-wrap gap-4 justify-center bottom-in">
+      {posts.map((post) => (
+        <Tarjeta post={post} key={post.id} />
+      ))}
     </div>
   );
 }
