@@ -1,11 +1,14 @@
-import Banner from "./components/Banner";
-import Noticias from "./components/Noticias";
+import Tarjeta from "./components/Tarjeta";
 
-export default function Home() {
+export default async function Noticias() {
+  const res = await fetch("https://fernandafamiliar.soy/wp-json/wp/v2/posts");
+  const posts = await res.json();
+
   return (
-    <>
-      <Banner />
-      <Noticias />
-    </>
+    <div className="p-4 flex flex-wrap gap-4 justify-center bottom-in">
+      {posts.map((post) => (
+        <Tarjeta post={post} key={post.id} />
+      ))}
+    </div>
   );
 }
