@@ -6,9 +6,7 @@ export default async function Noticias() {
 
   return (
     <div className="p-4 flex flex-wrap gap-4 justify-center bottom-in">
-      {posts.map((post) => (
-        <Tarjeta post={post} key={post.id} />
-      ))}
+      {posts && posts.map((post) => <Tarjeta post={post} key={post.id} />)}
     </div>
   );
 }
