@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import parse from "html-react-parser";
@@ -17,7 +15,6 @@ export default function Tarjeta({ post }) {
           height={500}
           alt="Imagen de la noticia"
           className="max-h-64 max-w-64 object-cover rounded-md"
-          onClick={() => sendGTMEvent({ event: "buttonClicked", value: "xyz" })}
         />
       )}
       <div className="max-w-sm flex flex-col gap-2">
