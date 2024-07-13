@@ -3,7 +3,9 @@ import parse from "html-react-parser";
 
 export default async function Noticia({ params }) {
   //Fetch posts
-  const res = await fetch("https://fernandafamiliar.soy/wp-json/wp/v2/posts");
+  const res = await fetch("https://fernandafamiliar.soy/wp-json/wp/v2/posts", {
+    cache: "no-store",
+  });
   const posts = await res.json();
 
   //Encontrar noticia seleccionada
