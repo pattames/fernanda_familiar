@@ -16,7 +16,7 @@ export default async function Noticias() {
     const posts = await res.json();
 
     return (
-      <div className="p-4 flex flex-wrap gap-4 justify-center bottom-in">
+      <div className="p-4 flex flex-wrap gap-4 justify-center fade-in">
         {posts && posts.map((post) => <Tarjeta post={post} key={post.id} />)}
       </div>
     );

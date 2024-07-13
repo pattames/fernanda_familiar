@@ -17,6 +17,12 @@ export default async function Noticia({ params }) {
   );
   const author = await res2.json();
 
+  //Nuevo formato de fecha
+  const year = post.date.substring(0, 4);
+  const month = post.date.substring(5, 7);
+  const day = post.date.substring(8, 10);
+  const newDate = day + "-" + month + "-" + year;
+
   return (
     <div className="max-w-7xl flex flex-col mx-auto py-10 px-6 gap-8 border-2 fade-in">
       <h1 className="text-4xl font-semibold text-center">
@@ -35,7 +41,7 @@ export default async function Noticia({ params }) {
         <h2>
           Por <span className="font-bold">{author.name && author.name}</span>
         </h2>
-        <h2>{post.date && post.date}</h2>
+        <h2>{post.date && newDate}</h2>
       </div>
       {post.content.rendered && (
         <div className="text-lg font-serif">{parse(post.content.rendered)}</div>
