@@ -13,7 +13,10 @@ export default async function Noticia({ params }) {
 
   //Fetch author
   const res2 = await fetch(
-    `https://fernandafamiliar.soy/wp-json/wp/v2/users/${post.author}`
+    `https://fernandafamiliar.soy/wp-json/wp/v2/users/${post.author}`,
+    {
+      cache: "no-store",
+    }
   );
   const author = await res2.json();
 
