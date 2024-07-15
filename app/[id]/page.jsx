@@ -37,7 +37,7 @@ export default async function Noticia({ params }) {
           height={600}
           width={600}
           alt="Imagen de la noticia"
-          className="mx-auto rounded-full shadow-xl shadow-slate-400"
+          className="max-h-64 object-cover mx-auto shadow-xl shadow-slate-400"
         />
       )}
       <div className="text-center">
