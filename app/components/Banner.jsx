@@ -11,7 +11,7 @@ export default function Banner() {
           alt="Logo Fernanda Familiar"
           className="bg-gray-400 bg-opacity-30 rounded-md p-2 mx-auto"
         />
-        <h1 className="text-center my-4 bg-red-600 text-white max-w-44 p-2 font-bold rounded-md mx-auto">
+        <h1 className="text-center my-4 bg-red-600 text-white max-w-44 p-2 font-bold mx-auto">
           ÚLTIMAS NOTICIAS
         </h1>
       </div>
