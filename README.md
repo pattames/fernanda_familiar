@@ -20,8 +20,10 @@
   - Usé Tailwind CSS para mayor eficiencia
   - Incluí animaciones fade-in para cuando se monta la página
   - Cada post aumenta su tamaño a la hora de pasar el cursor por encima del mismo
+  - Usé Daisy UI (Tailwind framework) para agregar un spinner mientras se cargan los datos de la página
 
 - Google Tag Manager
+
   - Instalado en toda la página
   - Agregué una propiedad “sendGTME” en las tarjetas, que indica cada que alguien hace click en alguna de ellas
   - Me parece que desde mi cuenta de GTM logré hacer cierto tipo de configuración para que los datos se vean reflejados en Google Analytics, pero no estoy familiarizado con la plataforma

@@ -1,7 +1,7 @@
 export default function Loading() {
   return (
-    <div>
-      <h1>Loading...</h1>
+    <div className="flex justify-center p-32">
+      <span className="loading loading-bars loading-lg"></span>
     </div>
   );
 }
