@@ -23,7 +23,7 @@ export default function Tarjeta({ post }) {
       )}
       <div className="max-w-sm flex flex-col gap-2">
         <h1 className="text-2xl font-medium">
-          {post.title.rendered && post.title.rendered}
+          {post.title.rendered && parse(post.title.rendered)}
         </h1>
         {post.excerpt.rendered && (
           <div className="text-lg">{parse(post.excerpt.rendered)}</div>

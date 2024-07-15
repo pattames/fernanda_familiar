@@ -29,7 +29,7 @@ export default async function Noticia({ params }) {
   return (
     <div className="max-w-7xl flex flex-col mx-auto py-10 px-6 gap-8 border-2 fade-in">
       <h1 className="text-4xl font-semibold text-center">
-        {post.title.rendered && post.title.rendered}
+        {post.title.rendered && parse(post.title.rendered)}
       </h1>
       {post.jetpack_featured_media_url && (
         <Image
