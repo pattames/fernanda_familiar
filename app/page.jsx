@@ -1,6 +1,9 @@
 import Tarjeta from "./components/Tarjeta";
 
 export default async function Noticias() {
+  //Test Loading
+  // await new Promise((resolve) => setTimeout(resolve, 3000));
+
   const res = await fetch("https://fernandafamiliar.soy/wp-json/wp/v2/posts", {
     cache: "no-store",
   });
