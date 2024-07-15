@@ -1,3 +1,7 @@
 export default function Loading() {
-  return <div className="loading loading-spinner loading-lg"></div>;
+  return (
+    <div className="flex justify-center p-28">
+      <span className="loading loading-bars loading-lg"></span>
+    </div>
+  );
 }
