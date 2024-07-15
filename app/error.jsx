@@ -7,8 +7,10 @@ export default function Error({ error }) {
   }, [error]);
 
   return (
-    <div>
-      <h1>Error fetching data</h1>
+    <div className="h-screen flex justify-center py-32">
+      <h1 className="text-2xl text-red-500 font-medium underline">
+        Error fetching data
+      </h1>
     </div>
   );
 }
