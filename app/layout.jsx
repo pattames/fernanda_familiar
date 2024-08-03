@@ -6,7 +6,7 @@ import { GoogleTagManager } from "@next/third-parties/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Fernanda Familiar",
+  title: "Noticias | Fernanda Familiar",
   description: "Últimas noticias",
 };
 
