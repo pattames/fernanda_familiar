@@ -2,7 +2,15 @@ import Image from "next/image";
 
 export default function Banner() {
   return (
-    <div className="bg-banner p-4 pb-1 bg-center lg:bg-fit fade-in">
+    <div className="p-4 pb-1 fade-in relative">
+      <Image
+        src="/banner.jpeg"
+        alt="Banner Fernanda Familiar"
+        fill
+        quality={100}
+        priority
+        className="object-cover lg:banner-fit -z-10"
+      />
       <div>
         <Image
           src="/logo-ff-blanco.png"
