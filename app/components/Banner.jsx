@@ -17,7 +17,8 @@ export default function Banner() {
         <Image
           src="/logo-ff-blanco.png"
           width={500}
-          height={500}
+          height={120}
+          quality={100}
           alt="Logo Fernanda Familiar"
           className="bg-gray-400 bg-opacity-30 rounded-md p-2 mx-auto"
         />
