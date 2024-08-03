@@ -6,13 +6,6 @@
   .text-balance {
     text-wrap: balance;
   }
-  /* .bg-banner {
-    background-image: url("/banner.jpeg");
-    background-size: cover;
-  }
-  .bg-fit {
-    background-position: 50% 20%;
-  } */
   .banner-fit {
     object-position: 50% 20%;
   }

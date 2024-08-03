@@ -9,6 +9,8 @@ export default function Banner() {
         fill
         quality={100}
         priority
+        //En caso de querer la máxima resolución:
+        unoptimized
         className="object-cover lg:banner-fit -z-10"
       />
       <div>
