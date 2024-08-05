@@ -9,7 +9,7 @@ export default function Tarjeta({ post }) {
   return (
     <Link
       href={`/${post.id}`}
-      className="py-4 px-6 flex flex-wrap gap-2 flex-row-reverse border-2 max-w-5xl justify-center duration-200 hover:scale-105"
+      className="py-4 px-6 flex flex-wrap gap-2 flex-row-reverse border-2 max-w-5xl justify-center sm:duration-200 sm:hover:scale-105"
     >
       {post.jetpack_featured_media_url && (
         <Image
